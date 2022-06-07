@@ -12,19 +12,11 @@
 		A386FD6A284F82D600AFEDE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A386FD69284F82D600AFEDE2 /* Assets.xcassets */; };
 		A386FD6D284F82D600AFEDE2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A386FD6C284F82D600AFEDE2 /* Preview Assets.xcassets */; };
 		A386FD77284F82D600AFEDE2 /* TCANavigationStacksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386FD76284F82D600AFEDE2 /* TCANavigationStacksTests.swift */; };
-		A386FD81284F82D600AFEDE2 /* TCANavigationStacksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386FD80284F82D600AFEDE2 /* TCANavigationStacksUITests.swift */; };
-		A386FD83284F82D600AFEDE2 /* TCANavigationStacksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386FD82284F82D600AFEDE2 /* TCANavigationStacksUITestsLaunchTests.swift */; };
+		A386FD91284F832E00AFEDE2 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A386FD90284F832E00AFEDE2 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		A386FD73284F82D600AFEDE2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A386FD5A284F82D400AFEDE2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A386FD61284F82D400AFEDE2;
-			remoteInfo = TCANavigationStacks;
-		};
-		A386FD7D284F82D600AFEDE2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A386FD5A284F82D400AFEDE2 /* Project object */;
 			proxyType = 1;
@@ -41,9 +33,6 @@
 		A386FD6C284F82D600AFEDE2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A386FD72284F82D600AFEDE2 /* TCANavigationStacksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCANavigationStacksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A386FD76284F82D600AFEDE2 /* TCANavigationStacksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCANavigationStacksTests.swift; sourceTree = "<group>"; };
-		A386FD7C284F82D600AFEDE2 /* TCANavigationStacksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCANavigationStacksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A386FD80284F82D600AFEDE2 /* TCANavigationStacksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCANavigationStacksUITests.swift; sourceTree = "<group>"; };
-		A386FD82284F82D600AFEDE2 /* TCANavigationStacksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCANavigationStacksUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +40,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A386FD91284F832E00AFEDE2 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A386FD6F284F82D600AFEDE2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A386FD79284F82D600AFEDE2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,7 +59,6 @@
 			children = (
 				A386FD64284F82D400AFEDE2 /* TCANavigationStacks */,
 				A386FD75284F82D600AFEDE2 /* TCANavigationStacksTests */,
-				A386FD7F284F82D600AFEDE2 /* TCANavigationStacksUITests */,
 				A386FD63284F82D400AFEDE2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +68,6 @@
 			children = (
 				A386FD62284F82D400AFEDE2 /* TCANavigationStacks.app */,
 				A386FD72284F82D600AFEDE2 /* TCANavigationStacksTests.xctest */,
-				A386FD7C284F82D600AFEDE2 /* TCANavigationStacksUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,15 +99,6 @@
 			path = TCANavigationStacksTests;
 			sourceTree = "<group>";
 		};
-		A386FD7F284F82D600AFEDE2 /* TCANavigationStacksUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A386FD80284F82D600AFEDE2 /* TCANavigationStacksUITests.swift */,
-				A386FD82284F82D600AFEDE2 /* TCANavigationStacksUITestsLaunchTests.swift */,
-			);
-			path = TCANavigationStacksUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +115,9 @@
 			dependencies = (
 			);
 			name = TCANavigationStacks;
+			packageProductDependencies = (
+				A386FD90284F832E00AFEDE2 /* ComposableArchitecture */,
+			);
 			productName = TCANavigationStacks;
 			productReference = A386FD62284F82D400AFEDE2 /* TCANavigationStacks.app */;
 			productType = "com.apple.product-type.application";
@@ -165,24 +140,6 @@
 			productReference = A386FD72284F82D600AFEDE2 /* TCANavigationStacksTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A386FD7B284F82D600AFEDE2 /* TCANavigationStacksUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A386FD8C284F82D600AFEDE2 /* Build configuration list for PBXNativeTarget "TCANavigationStacksUITests" */;
-			buildPhases = (
-				A386FD78284F82D600AFEDE2 /* Sources */,
-				A386FD79284F82D600AFEDE2 /* Frameworks */,
-				A386FD7A284F82D600AFEDE2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A386FD7E284F82D600AFEDE2 /* PBXTargetDependency */,
-			);
-			name = TCANavigationStacksUITests;
-			productName = TCANavigationStacksUITests;
-			productReference = A386FD7C284F82D600AFEDE2 /* TCANavigationStacksUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,10 +157,6 @@
 						CreatedOnToolsVersion = 14.0;
 						TestTargetID = A386FD61284F82D400AFEDE2;
 					};
-					A386FD7B284F82D600AFEDE2 = {
-						CreatedOnToolsVersion = 14.0;
-						TestTargetID = A386FD61284F82D400AFEDE2;
-					};
 				};
 			};
 			buildConfigurationList = A386FD5D284F82D400AFEDE2 /* Build configuration list for PBXProject "TCANavigationStacks" */;
@@ -215,13 +168,15 @@
 				Base,
 			);
 			mainGroup = A386FD59284F82D400AFEDE2;
+			packageReferences = (
+				A386FD8F284F832E00AFEDE2 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = A386FD63284F82D400AFEDE2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				A386FD61284F82D400AFEDE2 /* TCANavigationStacks */,
 				A386FD71284F82D600AFEDE2 /* TCANavigationStacksTests */,
-				A386FD7B284F82D600AFEDE2 /* TCANavigationStacksUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -237,13 +192,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A386FD70284F82D600AFEDE2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A386FD7A284F82D600AFEDE2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -270,15 +218,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A386FD78284F82D600AFEDE2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A386FD83284F82D600AFEDE2 /* TCANavigationStacksUITestsLaunchTests.swift in Sources */,
-				A386FD81284F82D600AFEDE2 /* TCANavigationStacksUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -286,11 +225,6 @@
 			isa = PBXTargetDependency;
 			target = A386FD61284F82D400AFEDE2 /* TCANavigationStacks */;
 			targetProxy = A386FD73284F82D600AFEDE2 /* PBXContainerItemProxy */;
-		};
-		A386FD7E284F82D600AFEDE2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A386FD61284F82D400AFEDE2 /* TCANavigationStacks */;
-			targetProxy = A386FD7D284F82D600AFEDE2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -351,6 +285,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ENABLE_BARE_SLASH_REGEX = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -404,6 +339,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_ENABLE_BARE_SLASH_REGEX = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -507,42 +443,6 @@
 			};
 			name = Release;
 		};
-		A386FD8D284F82D600AFEDE2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QCX22KSL99;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = co.uk.lukeredpath.TCANavigationStacksUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TCANavigationStacks;
-			};
-			name = Debug;
-		};
-		A386FD8E284F82D600AFEDE2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QCX22KSL99;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = co.uk.lukeredpath.TCANavigationStacksUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TCANavigationStacks;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -573,16 +473,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A386FD8C284F82D600AFEDE2 /* Build configuration list for PBXNativeTarget "TCANavigationStacksUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A386FD8D284F82D600AFEDE2 /* Debug */,
-				A386FD8E284F82D600AFEDE2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A386FD8F284F832E00AFEDE2 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.34.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A386FD90284F832E00AFEDE2 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A386FD8F284F832E00AFEDE2 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A386FD5A284F82D400AFEDE2 /* Project object */;
 }
